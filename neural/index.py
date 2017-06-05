@@ -59,7 +59,8 @@ def train():
 	with tf.Session() as sess:
 		tf.global_variables_initializer().run()
 		tf.train.start_queue_runners()
-
+		if not os.path.exists(models_dir):
+			os.makedirs(models_dir)
 		for step in range(MAX_STEPS):
 			for filename in filenames:
 				train_image, train_label = dataset.read(filename)
