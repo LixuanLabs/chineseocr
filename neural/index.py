@@ -16,7 +16,7 @@ IMAGE_CHANNEL = 1
 LEARNING_RATE_BASE = 1e-2
 LEARNING_RATE_DECAY = 0.99
 MOVING_AVERAGE = 0.99  # 平均滑动
-MAX_STEPS = 30000
+MAX_STEPS = 40000
 ROTATE_ANGLE = 15
 ROTATE_COUNTS = 6
 BATCH_SIZE = 1000
@@ -65,10 +65,10 @@ def train():
 				train_image, train_label = dataset.read(filename)
 				assert isinstance(train_image, list)
 				assert isinstance(train_label, list)
-			_, loss_value = sess.run([train_op, loss], feed_dict={image_holder: train_image, label_holder: train_label})
-			if step % 3 == 0:
+				_, loss_value = sess.run([train_op, loss], feed_dict={image_holder: train_image, label_holder: train_label})
+			if step % 100 == 0:
 				print("after %d steps, the loss value is %g" % (step, loss_value))
-			# saver.save(sess, models_dir, global_step=step)
+				saver.save(sess, models_dir, global_step=step)
 
 
 def img_rotate(img_dir, file):

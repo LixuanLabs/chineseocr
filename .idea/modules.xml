@@ -3,6 +3,8 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/.idea/chineseocr.iml" filepath="$PROJECT_DIR$/.idea/chineseocr.iml" />
+      <module fileurl="file://$USER_HOME$/Program/python/jcyocr/.idea/jcyocr.iml" filepath="$USER_HOME$/Program/python/jcyocr/.idea/jcyocr.iml" />
+      <module fileurl="file://$USER_HOME$/Program/python/neuralnetwork/tensorflow/jcytosys/.idea/jcytosys.iml" filepath="$USER_HOME$/Program/python/neuralnetwork/tensorflow/jcytosys/.idea/jcytosys.iml" />
     </modules>
   </component>
 </project>
