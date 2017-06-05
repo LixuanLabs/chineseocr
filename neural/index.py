@@ -24,6 +24,7 @@ BATCH_SIZE = 1000
 # 路径设置
 datasets_dir = os.path.join(root_dir, "datasets")
 models_dir = os.path.join(root_dir, "models")
+models_file = os.path.join(models_dir, "model.ckpt")
 
 image_holder = tf.placeholder(tf.float32, [None, IMAGE_HEIGHT, IMAGE_WIDTH, IMAGE_CHANNEL])
 label_holder = tf.placeholder(tf.int32, [None])
@@ -69,7 +70,7 @@ def train():
 				_, loss_value = sess.run([train_op, loss], feed_dict={image_holder: train_image, label_holder: train_label})
 			if step % 100 == 0:
 				print("after %d steps, the loss value is %g" % (step, loss_value))
-				saver.save(sess, models_dir, global_step=step)
+				saver.save(sess, models_file, global_step=step)
 
 
 def img_rotate(img_dir, file):
