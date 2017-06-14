@@ -2,9 +2,12 @@
 <module type="PYTHON_MODULE" version="4">
   <component name="NewModuleRootManager">
     <content url="file://$MODULE_DIR$" />
+    <content url="file://$MODULE_DIR$/neural" />
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
     <orderEntry type="module" module-name="jcyocr" />
     <orderEntry type="module" module-name="jcytosys" />
+    <orderEntry type="module" module-name="mysite" />
+    <orderEntry type="module" module-name="titlerecognition" />
   </component>
 </module>

@@ -55,6 +55,17 @@ def read(filename):
 	# train_label = tf.cast(train_label, tf.int32)
 	return train_image, train_label
 
+def read_label(_label_file):
+	"""
+	label文件中的内容
+	:param _label_file: label文件的路径
+	:return: 
+	"""
+	f = open(_label_file, "r")
+	lines = f.readlines()
+	f.close()
+	return lines
+
 def deal_image(filename, train_image, train_label, file_index):
 	"""
 	:param file_index: 

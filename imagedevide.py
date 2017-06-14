@@ -8,6 +8,7 @@ import numpy as np
 from PIL import Image
 import os
 import time
+import correctimage
 
 # image_root_path = 'img'
 ROOT_DIR = os.path.abspath(os.path.dirname(__file__))
@@ -118,13 +119,7 @@ def findTextRegion(img, src, filename='', image_root_path=''):
 		# print (result)
 		try:
 			newimg = Image.fromarray(np.uint8(result))
-			# n = ''.join(filename.split('.')[:-1])
-		#     #
-		#     # # if not os.path.exists('img/res/img/temp/'+n):
-		#     # #     os.mkdir('img/res/img/temp/'+n+'/res')
-			#
-			# thish = int(np.min(h_)/10/3)
-			# newimg.save(os.path.join(SAVE_DIR,n+'_'+str(10000*thish+np.min(w_))+'.JPG'))
+
 		#     # newimg = cv2.imread(image_root_path+'media/out/out/'+n+'_'+str(10000*np.min(h_)+np.min(w_))+'.JPG')
 		# #
 		# #     box = np.int32(box)
@@ -197,12 +192,26 @@ def processimagefiles(image_root_path):
 
 		detect(img, f, image_root_path)
 
+def save_split_img(_img_dir):
+	_img_dir = os.path.abspath(_img_dir)
+	filenames = os.listdir(_img_dir)
+	for filename in filenames:
+		if not os.path.splitext(filename)[1].lower() in (".jpg", ".png", ".tiff", ".bmp"):
+			filenames.remove(filename)
+	for filename in filenames:
+		img = correctimage.precorrect(os.path.join(_img_dir, filename))
+		img.show()
+		img = cv2.cvtColor(np.array(img), cv2.COLOR_RGB2BGR)
+		regions = detect(img, )
+		for index, region in enumerate(regions):
+			n = ''.join(filename.split('.')[:-1])
+			# thish = int(np.min(h_)/10/3)
+			region.save(os.path.join(SAVE_DIR,n+'_'+str(index)+'.JPG'))
 
 if __name__ == '__main__':
-	filename = 'testimg/3.JPG'
-	img = cv2.imread(filename)
+	temp_dir = "/Users/Alex/Desktop/test"
+	save_split_img(temp_dir)
 
-	print detect(img, )
 
 	# filename = 'image00043.JPG'
 	# im = cv2.imread('img/'+filename)

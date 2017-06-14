@@ -68,7 +68,7 @@ def train():
 				assert isinstance(train_image, list)
 				assert isinstance(train_label, list)
 				_, loss_value = sess.run([train_op, loss], feed_dict={image_holder: train_image, label_holder: train_label})
-			if step % 100 == 0:
+			if step % 2 == 0:
 				print("after %d steps, the loss value is %g" % (step, loss_value))
 				saver.save(sess, models_file, global_step=step)
 

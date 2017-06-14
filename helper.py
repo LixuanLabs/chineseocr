@@ -7,6 +7,7 @@ def show_image(_raw_image):
 	显示图像
 	:param _raw_image: 
 	"""
+	cv2.namedWindow("test", cv2.WINDOW_NORMAL)
 	cv2.imshow("test", _raw_image)
 	cv2.waitKey()
 

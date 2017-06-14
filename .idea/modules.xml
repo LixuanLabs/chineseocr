@@ -5,6 +5,8 @@
       <module fileurl="file://$PROJECT_DIR$/.idea/chineseocr.iml" filepath="$PROJECT_DIR$/.idea/chineseocr.iml" />
       <module fileurl="file://$USER_HOME$/Program/python/jcyocr/.idea/jcyocr.iml" filepath="$USER_HOME$/Program/python/jcyocr/.idea/jcyocr.iml" />
       <module fileurl="file://$USER_HOME$/Program/python/neuralnetwork/tensorflow/jcytosys/.idea/jcytosys.iml" filepath="$USER_HOME$/Program/python/neuralnetwork/tensorflow/jcytosys/.idea/jcytosys.iml" />
+      <module fileurl="file://$USER_HOME$/Program/python/django/_tutorial/mysite/.idea/mysite.iml" filepath="$USER_HOME$/Program/python/django/_tutorial/mysite/.idea/mysite.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../titlerecognition/.idea/titlerecognition.iml" filepath="$PROJECT_DIR$/../titlerecognition/.idea/titlerecognition.iml" />
     </modules>
   </component>
 </project>
