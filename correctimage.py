@@ -18,7 +18,7 @@ def threshold(_filename):
 		_img,
 		255,
 		cv2.ADAPTIVE_THRESH_GAUSSIAN_C,
-		cv2.THRESH_BINARY_INV, 21, 5
+		cv2.THRESH_BINARY, 21, 5
 	)
 	return adaptive_threshold
 
@@ -32,13 +32,14 @@ def dilate(raw_img):
 	raw_img = cv2.dilate(raw_img, kernel)
 	return raw_img
 
-def erode(raw_img):
+def erode(raw_img, x_axis=7):
 	"""
 		腐蚀图片
+	:param x_axis: x方向腐蚀度
 	:param raw_img: 
 	:return: 
 	"""
-	kernel = cv2.getStructuringElement(cv2.MORPH_RECT, (7,1))
+	kernel = cv2.getStructuringElement(cv2.MORPH_RECT, (x_axis,1))
 	raw_img = cv2.erode(raw_img, kernel)
 	return raw_img
 
@@ -93,8 +94,11 @@ def caculate_rotate_angle(raw_image):
 	else:
 		prefix = -1
 	try:
-		angle = prefix * (np.sum(angle_weight) / np.sum(line_length))
-	except ArithmeticError:
+		if not angle_weight:
+			angle = 0
+		else:
+			angle = prefix * (np.sum(angle_weight) / np.sum(line_length))
+	except Exception as e:
 		angle = 0
 	finally:
 		return angle
@@ -106,13 +110,10 @@ def precorrect(_filename):
 	:return: 返回纠正后的图片
 	"""
 	_img = threshold(_filename)
+
 	# _img = erode(_img)
 	_img = dilate(_img)
 
-	_img = dilate(_img)
-	_img = dilate(_img)
-	_img = dilate(_img)
-	_img = dilate(_img)
 	# _img = cv2.medianBlur(_img, 11)
 	_rotate_angle = caculate_rotate_angle(_img)
 	return _filename, _rotate_angle
@@ -120,19 +121,16 @@ def precorrect(_filename):
 def predir(_img_dir):
 	filenames = os.listdir(_img_dir)
 	for filename in filenames:
-		print(filename)
 		if filename.split(".")[-1].lower() in ("jpg", "png", "tiff"):
 			file, rotate_angle = precorrect(os.path.join(_img_dir, filename))
-			print ("filename, torate_angle", filename, rotate_angle)
 			img = Image.open(file)
 			img.rotate(rotate_angle).show()
 			img.close()
 
 
 if __name__ == "__main__":
-	filename = "/Users/Alex/Desktop/test/image00020.JPG"
+	filename = "/Users/Alex/Desktop/test/image000031.JPG"
 	file, rotate_angle = precorrect(filename)
-	print("rotate_angle", rotate_angle)
 	img = Image.open(file)
 	img = img.rotate(rotate_angle)
 	img.show()

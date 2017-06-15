@@ -62,7 +62,7 @@ def read_label(_label_file):
 	:return: 
 	"""
 	f = open(_label_file, "r")
-	lines = f.readlines()
+	lines = f.read()
 	f.close()
 	return lines
 
