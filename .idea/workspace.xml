@@ -2,25 +2,20 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="58cdc356-29c4-4499-82d8-cb53120f644e" name="Default" comment="add models file">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ApplyImages/image00003.JPG" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ApplyImages/image000031.JPG" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ApplyImages/image00005.JPG" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ApplyImages/image00007.JPG" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ApplyImages/image00015.JPG" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ApplyImages/image00020.JPG" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ApplyImages/image00024.JPG" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ApplyImages/image00028.JPG" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ApplyImages/image00038.JPG" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ApplyImages/image00050.JPG" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ApplyImages/image00068.JPG" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ApplyImages/image00069.JPG" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gitignore" afterPath="$PROJECT_DIR$/.gitignore" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ApplyImages/image00003.JPG" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ApplyImages/image000031.JPG" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ApplyImages/image00005.JPG" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ApplyImages/image00007.JPG" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ApplyImages/image00015.JPG" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ApplyImages/image00020.JPG" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ApplyImages/image00024.JPG" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ApplyImages/image00028.JPG" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ApplyImages/image00038.JPG" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ApplyImages/image00050.JPG" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ApplyImages/image00068.JPG" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ApplyImages/image00069.JPG" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/correctimage.py" afterPath="$PROJECT_DIR$/correctimage.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dataset.py" afterPath="$PROJECT_DIR$/dataset.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/helper.py" afterPath="$PROJECT_DIR$/helper.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/imagedevide.py" afterPath="$PROJECT_DIR$/imagedevide.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/neural/production.py" afterPath="$PROJECT_DIR$/neural/production.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../titlerecognition/neural/production.py" afterPath="$PROJECT_DIR$/../titlerecognition/neural/production.py" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -492,7 +487,14 @@
       <option name="project" value="LOCAL" />
       <updated>1497435683390</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="commit production">
+      <created>1497496147886</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1497496147886</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TodoView">
@@ -573,7 +575,8 @@
     <MESSAGE value="add models dir" />
     <MESSAGE value="inital commit" />
     <MESSAGE value="add models file" />
-    <option name="LAST_COMMIT_MESSAGE" value="add models file" />
+    <MESSAGE value="commit production" />
+    <option name="LAST_COMMIT_MESSAGE" value="commit production" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -720,6 +723,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1056">
           <caret line="48" column="8" lean-forward="true" selection-start-line="48" selection-start-column="8" selection-end-line="48" selection-end-column="8" />
+          <folding>
+            <element signature="e#15#25#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
