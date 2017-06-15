@@ -63,6 +63,6 @@ def production(_filename):
 							print ("no match")
 
 if __name__ == "__main__":
-	filename = os.path.join(os.path.abspath(os.path.dirname(__file__)), "../ApplyImages/image00003.JPG")
+	filename = os.path.join(os.path.abspath(os.path.dirname(__file__)), "../applyimages/image00003.JPG")
 	print (filename)
 	production(filename)
