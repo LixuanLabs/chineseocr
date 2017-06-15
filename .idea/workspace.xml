@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="58cdc356-29c4-4499-82d8-cb53120f644e" name="Default" comment="add models file">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gitignore" afterPath="$PROJECT_DIR$/.gitignore" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/imagedevide.py" afterPath="$PROJECT_DIR$/imagedevide.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/neural/index.py" afterPath="$PROJECT_DIR$/neural/index.py" />
@@ -46,10 +45,40 @@
         <entry file="file://$PROJECT_DIR$/neural/index.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="396">
-              <caret line="18" column="14" lean-forward="false" selection-start-line="18" selection-start-column="14" selection-end-line="18" selection-end-column="14" />
+              <caret line="18" column="17" lean-forward="false" selection-start-line="18" selection-start-column="17" selection-end-line="18" selection-end-column="17" />
               <folding>
                 <element signature="e#16#26#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="imagedevide.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/imagedevide.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-4941">
+              <caret line="4" column="10" lean-forward="true" selection-start-line="4" selection-start-column="10" selection-end-line="4" selection-end-column="10" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="labels.txt" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/labels.txt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="__init__.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/__init__.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -161,12 +190,12 @@
         <option value="$PROJECT_DIR$/../titlerecognition/.gitignore" />
         <option value="$PROJECT_DIR$/correctimage.py" />
         <option value="$PROJECT_DIR$/helper.py" />
-        <option value="$PROJECT_DIR$/imagedevide.py" />
         <option value="$PROJECT_DIR$/3500.txt" />
         <option value="$PROJECT_DIR$/../titlerecognition/neural/production.py" />
         <option value="$PROJECT_DIR$/neural/production.py" />
         <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/dataset.py" />
+        <option value="$PROJECT_DIR$/imagedevide.py" />
         <option value="$PROJECT_DIR$/neural/index.py" />
       </list>
     </option>
@@ -313,7 +342,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.correctimage">
+  <component name="RunManager" selected="Python.imagedevide">
     <configuration default="false" name="correctimage" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -327,6 +356,24 @@
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <module name="title-recognition" />
       <option name="SCRIPT_NAME" value="$USER_HOME$/Program/python/title-recognition/Helper/correctimage.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <method />
+    </configuration>
+    <configuration default="false" name="imagedevide" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="chineseocr" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/imagedevide.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -396,12 +443,14 @@
       <option name="_new_targetType" value="&quot;PATH&quot;" />
       <method />
     </configuration>
-    <list size="1">
+    <list size="2">
       <item index="0" class="java.lang.String" itemvalue="Python.correctimage" />
+      <item index="1" class="java.lang.String" itemvalue="Python.imagedevide" />
     </list>
     <recent_temporary>
-      <list size="1">
-        <item index="0" class="java.lang.String" itemvalue="Python.correctimage" />
+      <list size="2">
+        <item index="0" class="java.lang.String" itemvalue="Python.imagedevide" />
+        <item index="1" class="java.lang.String" itemvalue="Python.correctimage" />
       </list>
     </recent_temporary>
   </component>
@@ -510,7 +559,14 @@
       <option name="project" value="LOCAL" />
       <updated>1497497070183</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="change train steps">
+      <created>1497497627138</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1497497627138</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="TodoView">
@@ -525,9 +581,9 @@
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1628" height="1027" extended-state="6" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.29177216" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.29177216" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.329718" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.329718" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.329718" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.329718" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
@@ -593,15 +649,16 @@
     <MESSAGE value="commit production" />
     <MESSAGE value="delete applyimage" />
     <MESSAGE value="add models file" />
-    <option name="LAST_COMMIT_MESSAGE" value="add models file" />
+    <MESSAGE value="change train steps" />
+    <MESSAGE value="commit imagedevide.py" />
+    <MESSAGE value="crlf to lf" />
+    <option name="LAST_COMMIT_MESSAGE" value="crlf to lf" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$USER_HOME$/Program/python/title-recognition/TrainImages/image00024106582195434.jpg" />
-    <entry file="file://$USER_HOME$/Program/python/title-recognition/TrainImages/image00024146842612348.jpg" />
     <entry file="file://$USER_HOME$/Program/python/title-recognition/TrainImages/image00024558246031106.jpg" />
     <entry file="file://$USER_HOME$/Program/python/title-recognition/TrainImages/image00024776489206979.jpg" />
     <entry file="file://$USER_HOME$/Program/python/title-recognition/TrainImages/image00028103770585775.jpg" />
@@ -736,16 +793,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/imagedevide.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="5588">
-          <caret line="254" column="16" lean-forward="false" selection-start-line="254" selection-start-column="16" selection-end-line="254" selection-end-column="16" />
-          <folding>
-            <element signature="e#15#25#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/correctimage.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="2948">
@@ -826,6 +873,14 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/__init__.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/dataset.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="559">
@@ -834,10 +889,26 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/labels.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/imagedevide.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-4941">
+          <caret line="4" column="10" lean-forward="true" selection-start-line="4" selection-start-column="10" selection-end-line="4" selection-end-column="10" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/neural/index.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="396">
-          <caret line="18" column="14" lean-forward="false" selection-start-line="18" selection-start-column="14" selection-end-line="18" selection-end-column="14" />
+          <caret line="18" column="17" lean-forward="false" selection-start-line="18" selection-start-column="17" selection-end-line="18" selection-end-column="17" />
           <folding>
             <element signature="e#16#26#0" expanded="true" />
           </folding>
