@@ -49,7 +49,7 @@ def production(_filename):
 
 						img = cv2.resize(img, (IMAGE_WIDTH, IMAGE_HEIGHT), interpolation=cv2.INTER_CUBIC)
 						img = img.reshape(IMAGE_HEIGHT, IMAGE_WIDTH, IMAGE_CHANNEL)
-						helper.show_image(img)
+						# helper.show_image(img)
 						img = np.array([img], dtype=np.float32)
 						y = inference.inference(img, reuse=reuse)
 						reuse = True
