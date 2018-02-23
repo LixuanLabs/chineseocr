@@ -129,7 +129,7 @@ def predir(_img_dir):
 
 
 if __name__ == "__main__":
-	filename = "/Users/Alex/Desktop/test/image000031.JPG"
+	filename = ""
 	file, rotate_angle = precorrect(filename)
 	img = Image.open(file)
 	img = img.rotate(rotate_angle)

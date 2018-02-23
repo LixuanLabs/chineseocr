@@ -55,11 +55,11 @@ def test_identity(image_dir):
 
 
 def main(argv=None):
-	filename = "/Users/Alex/Desktop/文字识别文件/陈刚妨害公务/1/image00001.JPG"
+	filename = ""
 	identity(filename)
 
 
 if __name__ == "__main__":
-	test_dir = "/Users/Alex/Desktop/文字识别文件/陈刚妨害公务/1/"
+	test_dir = ""
 	test_identity(test_dir)
 	# print(identity(filename))
